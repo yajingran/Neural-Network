@@ -2,26 +2,19 @@
 
 ## Overview
 In this project, I created a deep learning neural network to analyze donation data to provide insights on effectiveness of donations.
+1. Import, analyze, clean, and preprocess a “real-world” classification dataset.
+2. Select, design, and train a binary classification model of your choosing.
+3. Optimize model training and input data to achieve desired model performance.
 
-## Summary Statistics on Suspension Coils
-![total_summary](Resources/total_summary.PNG)
-![lot_summary](Resources/lot_summary.PNG)
-<br />In total, the current manufacturing data meets the design specification. However, the data of lot 3 alone does not. The variance of this lot is 220.01, which is higher than the requirements of 100.
-
-## T-Tests on Suspension Coils
-![t_test](Resources/t_test.PNG)
-<br />H0: there is no statistical difference
-<br />Ha: there is statistical difference
-<br />population mean: 1500 lbs per square inch
+## Analysis Overview
+I used three layers. Input layer with two hidden layers. Having 2-3 times the amount of neurons in the hidden layer as the number of inputs is suggested.
+## Steps
+1. Combine rare categorical via bucketing
+2. Encode categorical variables using one-hot encoding
+3. Standardize numerical variables using TensorFlow's StandardScaler class.
  
- ## Study Design: MechaCar vs Competition
- If the price we planned to sell our vihecles are the same as our competitors, we would need to look into how we surpass our competitors in other fields, such as fuel efficiency.
- We will need to consider factors like distances and weather conditions and compare the dataset with comparable vahicles from competitors.
- <br />We will need to set up a paired t-test.
- <br />H0: the difference between our paired observations is equal to zero (no statistical difference)
- <br />Ha: the difference between our paired observations is not equal to zero 
- <br />Parameters include:
- <br />`x: our mpg dataset as vector of numbers`
- <br />`y: competitors mpg dataset as vector of numbers`
- <br />`paired: must be set to TRUE`
- <br />`alternative: tells the function if the hypothesis is one-sided or two-sided`
+ ## Summary
+A binary classifier that is capable of predicting whether or not an applicant will be successful if funded by Alphabet Soup using the features collected in the provided dataset is created.
+
+## Rcommendation
+I would use Random Frorest Classifiers as an alternative to solve the classification problem. This model combines multiple smaller models into a more robust and accurate model.It has the advantage in robustness and scalability. The data would be easy to be transformed and fit into this model. Overall, it would be more effificnet.
